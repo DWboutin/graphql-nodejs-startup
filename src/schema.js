@@ -1,13 +1,5 @@
 import { makeExecutableSchema } from 'graphql-tools';
-
-var typeDefs = [`
-type Query {
-  hello: String
-}
-
-schema {
-  query: Query
-}`];
+import typeDefs from './data/schema.graphql';
 
 var resolvers = {
   Query: {

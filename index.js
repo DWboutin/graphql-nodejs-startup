@@ -1,8 +1,6 @@
 var config = require('./config');
 
-require('babel-core/register')({
-  presets: ["es2015", "stage-2"]
-});
+require('babel-core/register')();
 
 var api = require('./src/server').default;
 
